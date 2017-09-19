@@ -11,7 +11,7 @@ public class ShipItem {
     }
     public ShipItem(){}
 
-    public double calculateAdddedCost() {
+    public double calculateAddedCost() {
         if(mOunces > 16) {
             return .5 * (int)(mOunces - 16 +.5);
         }
@@ -19,7 +19,7 @@ public class ShipItem {
     }
 
     public double calculateTotalCost() {
-        return BASE_COST + calculateAdddedCost();
+        return BASE_COST + calculateAddedCost();
     }
 
     public double getBASE_COST() {
