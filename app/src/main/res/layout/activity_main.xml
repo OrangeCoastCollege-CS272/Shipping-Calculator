@@ -6,6 +6,8 @@
         android:id="@+id/shippingRelativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/shipping_background"
+
         tools:context="edu.orangecoastcollege.a273.sbadajozcs.shippingcalculator.MainActivity">
     <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -49,9 +51,9 @@
             android:layout_above="@+id/addedCostTextView" android:layout_alignRight="@+id/addedCostTextView"
             android:layout_alignEnd="@+id/addedCostTextView"/>
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-              android:text="@string/total_text" android:layout_below="@+id/textView4"
-              android:layout_alignRight="@+id/textView4" android:layout_alignEnd="@+id/textView4"
-              android:id="@+id/textView8"/>
+              android:text="@string/total_text"
+              android:id="@+id/textView8" android:layout_below="@+id/textView4"
+              android:layout_alignLeft="@+id/textView4" android:layout_alignStart="@+id/textView4"/>
     <TextView
             android:text="@string/zero_text"
             android:layout_width="wrap_content"
