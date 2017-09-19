@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculatrice d\'expédition</string>
+    <string name="added_text">\"Coût ajouté:\"</string>
+    <string name="base_text">\"Coût de base:\"</string>
+    <string name="total_text">\"Coût d\'expédition total\"</string>
+    <string name="ounces_text">"\"en onces "</string>
+    <string name="header_text">Poids de l\'emballage</string>
+</resources>
