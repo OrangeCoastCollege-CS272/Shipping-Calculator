@@ -13,7 +13,7 @@ public class ShipItem {
 
     public double calculateAddedCost() {
         if(mOunces > 16) {
-            return .5 * (int)(mOunces - 16 +.5);
+            return (mOunces - 13) / 4 * .5;
         }
         else return 0.0;
     }
