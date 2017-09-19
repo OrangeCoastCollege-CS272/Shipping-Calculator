@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void update() {
         mBaseCostTextView.setText(mCurrency.format(mShipItem.getBASE_COST()));
-        mAddedCostTextView.setText(mCurrency.format(mShipItem.calculateAddedCost()));
-        mTotalCostTextView.setText(mCurrency.format(mShipItem.calculateTotalCost()));
+        mAddedCostTextView.setText(mCurrency.format(mShipItem.getAddedCost()));
+        mTotalCostTextView.setText(mCurrency.format(mShipItem.getTotalCost()));
     }
 }

@@ -5,21 +5,27 @@ public class ShipItem {
     private final double BASE_COST = 3.0;
 
     private int mOunces;
+    private double mAddedCost;
+    private double mTotalCost;
 
     public ShipItem(int ounces) {
         mOunces = ounces;
     }
-    public ShipItem(){}
 
-    public double calculateAddedCost() {
-        if(mOunces > 16) {
-            return (mOunces - 13) / 4 * .5;
-        }
-        else return 0.0;
+    public ShipItem() {
+        mOunces = 0;
+        mAddedCost = 0.0;
+        mTotalCost = 0.0;
     }
 
-    public double calculateTotalCost() {
-        return BASE_COST + calculateAddedCost();
+    private void calculateAddedCost() {
+        if (mOunces > 16) {
+            mAddedCost = (mOunces - 13) / 4 * .5;
+        } else mAddedCost = 0.0;
+    }
+
+    private double calculateTotalCost() {
+        return BASE_COST + mAddedCost;
     }
 
     public double getBASE_COST() {
@@ -30,7 +36,17 @@ public class ShipItem {
         return mOunces;
     }
 
+    public double getAddedCost() {
+        return mAddedCost;
+    }
+
+    public double getTotalCost() {
+        return mTotalCost;
+    }
+
     public void setOunces(int ounces) {
         mOunces = ounces;
+        calculateAddedCost();
+        calculateTotalCost();
     }
 }
